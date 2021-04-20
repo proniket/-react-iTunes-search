@@ -1,3 +1,4 @@
+An application using react that connects to the iTunes connect API to retrieve songs for a search term.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
