@@ -14,7 +14,7 @@ const Search = () => {
     const getIdata = async () => {
 
         let url = "https://itunes.apple.com/search?term=" + name;
-        let cors = "https://cors-anywhere.herokuapp.com/";
+        // let cors = "https://cors-anywhere.herokuapp.com/";
 
         // setData([]);
 
@@ -22,6 +22,8 @@ const Search = () => {
         .then( data => data.json() )
         .then( json => { 
             setData(json.results) } )
+
+        console.log(data);
     }
 
     return (
@@ -38,25 +40,24 @@ const Search = () => {
                 <div className="row" id="output"></div>
             </div>
 
-            
+
+            <div className="row" id="output">
             {
                 // Here we take the data and display it in grid     
                 data.map(curr => {
+                //    console.log(curr.trackId)
                     return (
                         <>
-                            
-                            
-                            <div className="row" id="output">
                             {
-                                <div className="col s4 m4 l4">
+                                <div className="col s4 m4 l4" key={curr.tarckId}>
                                     <div className="card">
                                         <div className="card-image waves-effect waves-block waves-light">
-                                            <img className="activator" src={curr.artworkUrl100} />
+                                            <img className="activator" alt="album" src={curr.artworkUrl100} />
                                         </div>
                                         <div className="card-content">
                                             <span className="card-title activator grey-text text-darken-4">{curr.artistName}<i
                                                 className="material-icons right">more_vert</i></span>
-                                            <p><a href="#">This is a link</a></p>
+                                            {/* <p><a>This is a link</a></p> */}
                                         </div>
                                         <div className="card-reveal">
                                             <span className="card-title grey-text text-darken-4">{curr.trackCensoredName}<i
@@ -65,16 +66,12 @@ const Search = () => {
                                         </div>
                                     </div>
                                 </div>
-                            
                             }
-                        </div>
                         </>
                     );
                     })
             }    
-                
-            
-
+            </div>    
         </>
     )
 }
