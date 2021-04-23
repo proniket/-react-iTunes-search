@@ -14,7 +14,7 @@ const Search = () => {
     const getIdata = async () => {
 
         let url = "https://itunes.apple.com/search?term=" + name;
-        // let cors = "https://cors-anywhere.herokuapp.com/";
+        let cors = "https://cors-anywhere.herokuapp.com/";
 
         // setData([]);
 
@@ -47,9 +47,9 @@ const Search = () => {
                 data.map(curr => {
                 //    console.log(curr.trackId)
                     return (
-                        <>
-                            {
-                                <div className="col s4 m4 l4" key={curr.tarckId}>
+                        <div key={curr.trackId}>
+                            
+                                <div className="col s4 m4 l4">
                                     <div className="card">
                                         <div className="card-image waves-effect waves-block waves-light">
                                             <img className="activator" alt="album" src={curr.artworkUrl100} />
@@ -66,8 +66,8 @@ const Search = () => {
                                         </div>
                                     </div>
                                 </div>
-                            }
-                        </>
+                            
+                        </div>
                     );
                     })
             }    
