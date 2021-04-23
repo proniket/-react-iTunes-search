@@ -18,7 +18,7 @@ const Search = () => {
 
         // setData([]);
 
-        fetch(url+cors)
+        fetch(url)
         .then( data => data.json() )
         .then( json => { 
             setData(json.results) } )
