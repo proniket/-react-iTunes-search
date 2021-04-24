@@ -1,4 +1,32 @@
-An application using react that connects to the iTunes connect API to retrieve songs for a search term.
+# React-iTunes-Search-App
+
+### [Live Site]()
+
+![React-iTunes-Search-App](https://i.ibb.co/LpVTN1T/react-i-Tunes-search-1.png)
+
+## Introduction
+An application using react that connects to the iTunes connect API to
+retrieve songs for a search term.
+
+This application has a search box that allows the user to search for an artist.
+
+This term is passed to the iTunes API in place of the #searchTerm parameter.
+
+This iTunes API to connect to is https://itunes.apple.com/search?term=#searchTerm
+
+A grid that shows the results.
+
+## Stack
+Reactjs, React hook, Materialize Css, Javascript
+
+## Contributors
+Aniket Gupta (Proniket)
+
+
+## Stage
+version 1.0.0 - completed
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
