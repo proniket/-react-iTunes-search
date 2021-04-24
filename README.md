@@ -7,9 +7,13 @@
 ## Introduction
 An application using react that connects to the iTunes connect API to
 retrieve songs for a search term.
+
 This application has a search box that allows the user to search for an artist.
+
 This term is passed to the iTunes API in place of the #searchTerm parameter.
+
 This iTunes API to connect to is https://itunes.apple.com/search?term=#searchTerm
+
 A grid that shows the results.
 
 
