@@ -16,15 +16,19 @@ This iTunes API to connect to is https://itunes.apple.com/search?term=#searchTer
 
 A grid that shows the results.
 
+
 ## Stack
 Reactjs, React hook, Materialize Css, Javascript
+
 
 ## Contributors
 Aniket Gupta (Proniket)
 
 
+
 ## Stage
 version 1.0.0 - completed
+
 
 
 # Getting Started with Create React App
