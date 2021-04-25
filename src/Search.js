@@ -14,7 +14,7 @@ const Search = () => {
     const getIdata = async () => {
 
         let url = "https://itunes.apple.com/search?term=" + name;
-        let cors = "https://cors-anywhere.herokuapp.com/";
+        // let cors = "https://cors-anywhere.herokuapp.com/";
 
         // setData([]);
 
